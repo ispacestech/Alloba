@@ -53,6 +53,3 @@ async def catch_all_proxy(request: Request, path: str):
 
 
 
-[tool.vercel]
-entrypoint = "src.alloba.main:app"
-Learn More: https://vercel.com/docs/frameworks/backend/fastapi#exporting-the-fastapi-application
