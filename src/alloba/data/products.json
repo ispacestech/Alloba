@@ -1,0 +1,1542 @@
+[
+  {
+    "id": 1,
+    "name": "Brick Making Machine QMJ2-40",
+    "name_l10n": {
+      "fr": "Machine à fabriquer des briques QMJ2-40",
+      "sw": "Mashine ya Kutengeneza Matofali QMJ2-40",
+      "pt": "Máquina de Fazer Tijolos QMJ2-40",
+      "ar": "ماكينة صنع الطوب QMJ2-40"
+    },
+    "cat": "construction",
+    "region": "africa",
+    "spec": "Automatic · 2,000–4,000 bricks/hr",
+    "spec_l10n": {
+      "fr": "Automatique · 2 000–4 000 briques/h",
+      "sw": "Kiotomatiki · matofali 2,000–4,000 kwa saa",
+      "pt": "Automática · 2.000–4.000 tijolos/h",
+      "ar": "تلقائية · 2,000–4,000 طوبة/ساعة"
+    },
+    "supplier": "Nile Brick Machinery Ltd",
+    "location": "Kampala, Uganda",
+    "price": "$2,800 – $6,500",
+    "unit": "per unit",
+    "rating": 4.6,
+    "reviews": 124,
+    "leadTime": "15–25 days",
+    "moq": "1 unit",
+    "thumb": "🧱"
+  },
+  {
+    "id": 2,
+    "name": "Hydraulic Passenger Lift 6–10 Stop",
+    "name_l10n": {
+      "fr": "Ascenseur hydraulique 6–10 étages",
+      "sw": "Lift ya Kubeba Watu ya Hidrolik 6–10",
+      "pt": "Elevador Hidráulico de Passageiros 6–10",
+      "ar": "مصعد هيدروليكي للركاب 6–10 طوابق"
+    },
+    "cat": "construction",
+    "region": "africa",
+    "spec": "630–1000 kg · gearless traction",
+    "spec_l10n": {
+      "fr": "630–1000 kg · traction sans engrenage",
+      "sw": "630–1000 kg · traksheni ya gearless",
+      "pt": "630–1000 kg · tração gearless",
+      "ar": "630–1000 كجم · سحب بدون تروس"
+    },
+    "supplier": "LiftWorks East Africa",
+    "location": "Nairobi, Kenya",
+    "price": "Quotation",
+    "unit": "per project",
+    "rating": 4.8,
+    "reviews": 61,
+    "leadTime": "45–60 days",
+    "moq": "1 unit",
+    "thumb": "🛗"
+  },
+  {
+    "id": 3,
+    "name": "TMT Bars Fe 500D",
+    "name_l10n": {
+      "fr": "Barres TMT Fe 500D",
+      "sw": "Fimbo za TMT Fe 500D",
+      "pt": "Barras TMT Fe 500D",
+      "ar": "قضبان TMT Fe 500D"
+    },
+    "cat": "construction",
+    "region": "africa",
+    "spec": "8–32 mm · high-strength ribbed",
+    "spec_l10n": {
+      "fr": "8–32 mm · à haute résistance",
+      "sw": "8–32 mm · nguvu ya juu",
+      "pt": "8–32 mm · alta resistência",
+      "ar": "8–32 مم · عالية القوة"
+    },
+    "supplier": "Mombasa Steel Mills",
+    "location": "Mombasa, Kenya",
+    "price": "$540 / ton",
+    "unit": "FOB Mombasa",
+    "rating": 4.7,
+    "reviews": 203,
+    "leadTime": "7–12 days",
+    "moq": "25 tons",
+    "thumb": "🛠️"
+  },
+  {
+    "id": 4,
+    "name": "Marine Plywood 18mm BWP",
+    "name_l10n": {
+      "fr": "Contreplaqué marin 18 mm BWP",
+      "sw": "Plywood ya Baharini 18mm BWP",
+      "pt": "Compensado Naval 18mm BWP",
+      "ar": "خشب رقائقي بحري 18 ملم"
+    },
+    "cat": "construction",
+    "region": "africa",
+    "spec": "2440×1220 mm · exterior grade",
+    "spec_l10n": {
+      "fr": "2440×1220 mm · qualité extérieure",
+      "sw": "2440×1220 mm · daraja la nje",
+      "pt": "2440×1220 mm · grau exterior",
+      "ar": "2440×1220 ملم · درجة خارجية"
+    },
+    "supplier": "Abani Timber Co.",
+    "location": "Accra, Ghana",
+    "price": "$28 / sheet",
+    "unit": "FOB Tema",
+    "rating": 4.5,
+    "reviews": 88,
+    "leadTime": "10 days",
+    "moq": "100 sheets",
+    "thumb": "🪵"
+  },
+  {
+    "id": 5,
+    "name": "Premium Emulsion Paints 20L",
+    "name_l10n": {
+      "fr": "Peinture émulsion premium 20 L",
+      "sw": "Rangi za Emulsion za Hali ya Juu 20L",
+      "pt": "Tintas de Emulsão Premium 20L",
+      "ar": "دهانات إيمولشن فاخرة 20 لتر"
+    },
+    "cat": "construction",
+    "region": "africa",
+    "spec": "Interior/exterior · weathershield",
+    "spec_l10n": {
+      "fr": "Intérieur/extérieur · résiste aux intempéries",
+      "sw": "Ndani/nje · kinga ya hali ya hewa",
+      "pt": "Interior/exterior · proteção climática",
+      "ar": "داخل/خارج · مقاومة للطقس"
+    },
+    "supplier": "Lagos Paints Ltd",
+    "location": "Lagos, Nigeria",
+    "price": "$42 / bucket",
+    "unit": "per 20L",
+    "rating": 4.4,
+    "reviews": 176,
+    "leadTime": "5 days",
+    "moq": "50 buckets",
+    "thumb": "🎨"
+  },
+  {
+    "id": 6,
+    "name": "Portland Cement 42.5R",
+    "name_l10n": {
+      "fr": "Ciment Portland 42.5R",
+      "sw": "Saruji ya Portland 42.5R",
+      "pt": "Cimento Portland 42.5R",
+      "ar": "أسمنت بورتلاند 42.5R"
+    },
+    "cat": "construction",
+    "region": "africa",
+    "spec": "Bulk / 50kg bags",
+    "spec_l10n": {
+      "fr": "En vrac / sacs de 50 kg",
+      "sw": "Kwa wingi / mifuko 50kg",
+      "pt": "Granel / sacos de 50kg",
+      "ar": "بالجملة / أكياس 50 كجم"
+    },
+    "supplier": "Coastal Cement Works",
+    "location": "Dar es Salaam, Tanzania",
+    "price": "$118 / ton",
+    "unit": "FOB Dar",
+    "rating": 4.6,
+    "reviews": 150,
+    "leadTime": "8 days",
+    "moq": "100 tons",
+    "thumb": "🧱"
+  },
+  {
+    "id": 7,
+    "name": "Hydraulic Excavator 20 Ton",
+    "name_l10n": {
+      "fr": "Excavatrice hydraulique 20 t",
+      "sw": "Excavator ya Hidrolik Tani 20",
+      "pt": "Escavadora Hidráulica de 20 Ton",
+      "ar": "حفار هيدروليكي 20 طن"
+    },
+    "cat": "machinery",
+    "region": "africa",
+    "spec": "1.0 m³ bucket · Cummins engine",
+    "spec_l10n": {
+      "fr": "Godet 1,0 m³ · moteur Cummins",
+      "sw": "Doo la mita 1.0 · injini ya Cummins",
+      "pt": "Balde 1,0 m³ · motor Cummins",
+      "ar": "جرافة 1.0 م³ · محرك كومنز"
+    },
+    "supplier": "HeavyTrade East Africa",
+    "location": "Nairobi, Kenya",
+    "price": "$78,000",
+    "unit": "per unit",
+    "rating": 4.7,
+    "reviews": 42,
+    "leadTime": "30 days",
+    "moq": "1 unit",
+    "thumb": "🚜"
+  },
+  {
+    "id": 8,
+    "name": "Concrete Mixer 500L",
+    "name_l10n": {
+      "fr": "Bétonnière 500 L",
+      "sw": "Mchanganyaji wa Zege 500L",
+      "pt": "Betoneira 500L",
+      "ar": "خلاطة خرسانة 500 لتر"
+    },
+    "cat": "machinery",
+    "region": "africa",
+    "spec": "Diesel or electric drive",
+    "spec_l10n": {
+      "fr": "Entraînement diesel ou électrique",
+      "sw": "Kiendeshi cha dizeli au umeme",
+      "pt": "Acionamento a diesel ou elétrico",
+      "ar": "تشغيل ديزل أو كهربائي"
+    },
+    "supplier": "BuildEquip Africa",
+    "location": "Addis Ababa, Ethiopia",
+    "price": "$3,400",
+    "unit": "per unit",
+    "rating": 4.3,
+    "reviews": 95,
+    "leadTime": "12 days",
+    "moq": "2 units",
+    "thumb": "⚙️"
+  },
+  {
+    "id": 9,
+    "name": "Diesel Generator 100 kVA",
+    "name_l10n": {
+      "fr": "Groupe électrogène diesel 100 kVA",
+      "sw": "Jenereta ya Dizeli 100 kVA",
+      "pt": "Gerador a Diesel 100 kVA",
+      "ar": "مولد ديزل 100 كيلو فولت أمبير"
+    },
+    "cat": "machinery",
+    "region": "africa",
+    "spec": "Standby · Perkins engine",
+    "spec_l10n": {
+      "fr": "De secours · moteur Perkins",
+      "sw": "Kusimama · injini ya Perkins",
+      "pt": "Standby · motor Perkins",
+      "ar": "احتياطي · محرك بيركنز"
+    },
+    "supplier": "PowerGrid Solutions",
+    "location": "Lagos, Nigeria",
+    "price": "$12,900",
+    "unit": "per unit",
+    "rating": 4.5,
+    "reviews": 71,
+    "leadTime": "20 days",
+    "moq": "1 unit",
+    "thumb": "⚡"
+  },
+  {
+    "id": 10,
+    "name": "Forklift 3 Ton Diesel",
+    "name_l10n": {
+      "fr": "Chariot élévateur diesel 3 t",
+      "sw": "Forklift ya Dizeli Tani 3",
+      "pt": "Empilhadeira Diesel 3 Ton",
+      "ar": "رافعة شوكية ديزل 3 طن"
+    },
+    "cat": "machinery",
+    "region": "africa",
+    "spec": "Mast height 3m · hydraulic",
+    "spec_l10n": {
+      "fr": "Hauteur de levage 3 m · hydraulique",
+      "sw": "Urefu wa mast 3m · hidrolik",
+      "pt": "Altura do mastro 3m · hidráulica",
+      "ar": "ارتفاع العمود 3م · هيدروليكي"
+    },
+    "supplier": "MachineryHub SA",
+    "location": "Johannesburg, South Africa",
+    "price": "$21,500",
+    "unit": "per unit",
+    "rating": 4.4,
+    "reviews": 33,
+    "leadTime": "25 days",
+    "moq": "1 unit",
+    "thumb": "🏗️"
+  },
+  {
+    "id": 11,
+    "name": "Arabica Coffee Beans AA",
+    "name_l10n": {
+      "fr": "Café arabica AA",
+      "sw": "Maharage ya Kahawa ya Arabica AA",
+      "pt": "Grãos de Café Arábica AA",
+      "ar": "حبوب بن عربية AA"
+    },
+    "cat": "agro",
+    "region": "africa",
+    "spec": "Grade AA · washed",
+    "spec_l10n": {
+      "fr": "Grade AA · lavé",
+      "sw": "Daraja AA · yaliyosafishwa",
+      "pt": "Grau AA · lavado",
+      "ar": "درجة AA · مغسولة"
+    },
+    "supplier": "Rift Valley Coffee Growers",
+    "location": "Nyeri, Kenya",
+    "price": "$6.40 / kg",
+    "unit": "FOB Mombasa",
+    "rating": 4.8,
+    "reviews": 214,
+    "leadTime": "7 days",
+    "moq": "5 tons",
+    "thumb": "☕"
+  },
+  {
+    "id": 12,
+    "name": "Ghana Cocoa Beans",
+    "name_l10n": {
+      "fr": "Fèves de cacao du Ghana",
+      "sw": "Maharage ya Kakao ya Ghana",
+      "pt": "Cacau em Amêndoa do Gana",
+      "ar": "حبوب كاكاو غانا"
+    },
+    "cat": "agro",
+    "region": "africa",
+    "spec": "Premium fermented",
+    "spec_l10n": {
+      "fr": "Fermentation premium",
+      "sw": "Yaliyochachushwa hali ya juu",
+      "pt": "Fermentação premium",
+      "ar": "مخمرة فاخرة"
+    },
+    "supplier": "Golden Pod Cooperative",
+    "location": "Kumasi, Ghana",
+    "price": "$3,100 / ton",
+    "unit": "FOB Tema",
+    "rating": 4.6,
+    "reviews": 168,
+    "leadTime": "9 days",
+    "moq": "10 tons",
+    "thumb": "🍫"
+  },
+  {
+    "id": 13,
+    "name": "White Maize Grain",
+    "name_l10n": {
+      "fr": "Maïs blanc en grain",
+      "sw": "Mahindi meupe",
+      "pt": "Milho Branco em Grão",
+      "ar": "حبوب ذرة بيضاء"
+    },
+    "cat": "agro",
+    "region": "africa",
+    "spec": "Moisture < 13%",
+    "spec_l10n": {
+      "fr": "Humidité < 13 %",
+      "sw": "Unyevu < 13%",
+      "pt": "Humidade < 13%",
+      "ar": "رطوبة أقل من 13٪"
+    },
+    "supplier": "Savanna Grains Ltd",
+    "location": "Lusaka, Zambia",
+    "price": "$295 / ton",
+    "unit": "FOB",
+    "rating": 4.3,
+    "reviews": 90,
+    "leadTime": "10 days",
+    "moq": "50 tons",
+    "thumb": "🌽"
+  },
+  {
+    "id": 14,
+    "name": "Raw Cashew Nuts W180",
+    "name_l10n": {
+      "fr": "Noix de cajou brutes W180",
+      "sw": "Korosho Mbichi W180",
+      "pt": "Castanha de Caju Crua W180",
+      "ar": "كاجو خام W180"
+    },
+    "cat": "agro",
+    "region": "africa",
+    "spec": "Count 180/lb · hand picked",
+    "spec_l10n": {
+      "fr": "Comptage 180/lb · tri manuel",
+      "sw": "Idadi 180/lb · zilizochaguliwa kwa mikono",
+      "pt": "Contagem 180/lb · seleção manual",
+      "ar": "عدد 180/رطل · منتقاة يدوياً"
+    },
+    "supplier": "Moz Agrotrade",
+    "location": "Maputo, Mozambique",
+    "price": "$1,050 / ton",
+    "unit": "FOB",
+    "rating": 4.5,
+    "reviews": 57,
+    "leadTime": "14 days",
+    "moq": "20 tons",
+    "thumb": "🥜"
+  },
+  {
+    "id": 15,
+    "name": "100% Cotton Plain Fabric",
+    "name_l10n": {
+      "fr": "Tissu uni 100 % coton",
+      "sw": "Kitambaa cha Pamba 100%",
+      "pt": "Tecido Liso 100% Algodão",
+      "ar": "قماش قطني ناعم 100٪"
+    },
+    "cat": "textiles",
+    "region": "africa",
+    "spec": "160 gsm · 44\" width",
+    "spec_l10n": {
+      "fr": "160 g/m² · laize 44\"",
+      "sw": "160 gsm · upana wa 44\"",
+      "pt": "160 gsm · largura 44\"",
+      "ar": "160 جم/م² · عرض 44 بوصة"
+    },
+    "supplier": "Nile Textile Mills",
+    "location": "Alexandria, Egypt",
+    "price": "$1.15 / meter",
+    "unit": "FOB",
+    "rating": 4.4,
+    "reviews": 110,
+    "leadTime": "15 days",
+    "moq": "5,000 m",
+    "thumb": "🧵"
+  },
+  {
+    "id": 16,
+    "name": "Ankara Wax Prints",
+    "name_l10n": {
+      "fr": "Pagnes wax Ankara",
+      "sw": "Vichapo vya Ankara Wax",
+      "pt": "Estampas Wax Ankara",
+      "ar": "أقمشة أنكارا واكس"
+    },
+    "cat": "textiles",
+    "region": "africa",
+    "spec": "6-yard premium · 100 designs",
+    "spec_l10n": {
+      "fr": "6 yards premium · 100 motifs",
+      "sw": "Yaards 6 premium · miundo 100",
+      "pt": "6 jardas premium · 100 desenhos",
+      "ar": "6 ياردات فاخرة · 100 تصميم"
+    },
+    "supplier": "Vlisco West Africa",
+    "location": "Cotonou, Benin",
+    "price": "$4.80 / yard",
+    "unit": "per yard",
+    "rating": 4.7,
+    "reviews": 260,
+    "leadTime": "12 days",
+    "moq": "100 yards",
+    "thumb": "🎭"
+  },
+  {
+    "id": 17,
+    "name": "Blank Cotton T-Shirts (6-pack)",
+    "name_l10n": {
+      "fr": "T-shirts en coton unis (lot de 6)",
+      "sw": "T-shirts za Pamba (pakiti 6)",
+      "pt": "T-Shirts de Algodão Lisas (6 un.)",
+      "ar": "قمصان قطنية سادة (6 قطع)"
+    },
+    "cat": "textiles",
+    "region": "africa",
+    "spec": "180 gsm · combed cotton",
+    "spec_l10n": {
+      "fr": "180 g/m² · coton peigné",
+      "sw": "180 gsm · pamba iliyochanganywa",
+      "pt": "180 gsm · algodão penteado",
+      "ar": "180 جم/م² · قطن ممشط"
+    },
+    "supplier": "GarmentWorks",
+    "location": "Nairobi, Kenya",
+    "price": "$9.90 / pack",
+    "unit": "per 6-pack",
+    "rating": 4.5,
+    "reviews": 83,
+    "leadTime": "18 days",
+    "moq": "500 packs",
+    "thumb": "👕"
+  },
+  {
+    "id": 18,
+    "name": "Polyester Yarn 150D",
+    "name_l10n": {
+      "fr": "Fil de polyester 150D",
+      "sw": "Uzi wa Polyester 150D",
+      "pt": "Fio de Poliéster 150D",
+      "ar": "خيط بوليستر 150D"
+    },
+    "cat": "textiles",
+    "region": "africa",
+    "spec": "Texturized · 32 colors",
+    "spec_l10n": {
+      "fr": "Texturé · 32 coloris",
+      "sw": "Uliofumwa · rangi 32",
+      "pt": "Texturizado · 32 cores",
+      "ar": "متموج · 32 لوناً"
+    },
+    "supplier": "Ethio Fibre Co.",
+    "location": "Adama, Ethiopia",
+    "price": "$1.60 / kg",
+    "unit": "FOB",
+    "rating": 4.2,
+    "reviews": 45,
+    "leadTime": "20 days",
+    "moq": "2 tons",
+    "thumb": "🧶"
+  },
+  {
+    "id": 19,
+    "name": "Mono Solar Panel 550W",
+    "name_l10n": {
+      "fr": "Panneau solaire mono 550 W",
+      "sw": "Panel ya Jua ya Mono 550W",
+      "pt": "Painel Solar Mono 550W",
+      "ar": "لوح شمسي أحادي 550 واط"
+    },
+    "cat": "electronics",
+    "region": "africa",
+    "spec": "PERC · 25-year warranty",
+    "spec_l10n": {
+      "fr": "PERC · garantie 25 ans",
+      "sw": "PERC · dhamana ya miaka 25",
+      "pt": "PERC · garantia de 25 anos",
+      "ar": "PERC · ضمان 25 سنة"
+    },
+    "supplier": "SolarAble Africa",
+    "location": "Accra, Ghana",
+    "price": "$165 / panel",
+    "unit": "per unit",
+    "rating": 4.8,
+    "reviews": 320,
+    "leadTime": "8 days",
+    "moq": "50 panels",
+    "thumb": "☀️"
+  },
+  {
+    "id": 20,
+    "name": "Hybrid Inverter 8kW",
+    "name_l10n": {
+      "fr": "Onduleur hybride 8 kW",
+      "sw": "Inverter ya Hibridi 8kW",
+      "pt": "Inversor Híbrido 8kW",
+      "ar": "عاكس هجين 8 كيلوواط"
+    },
+    "cat": "electronics",
+    "region": "africa",
+    "spec": "Pure sine wave · MPPT",
+    "spec_l10n": {
+      "fr": "Sinus pur · MPPT",
+      "sw": "Wimbi safi · MPPT",
+      "pt": "Onda senoidal pura · MPPT",
+      "ar": "موجة جيبية نقية · MPPT"
+    },
+    "supplier": "GridFree Solutions",
+    "location": "Lagos, Nigeria",
+    "price": "$1,240",
+    "unit": "per unit",
+    "rating": 4.6,
+    "reviews": 97,
+    "leadTime": "10 days",
+    "moq": "5 units",
+    "thumb": "🔋"
+  },
+  {
+    "id": 21,
+    "name": "PVC Copper Cable 2.5mm²",
+    "name_l10n": {
+      "fr": "Câble cuivre PVC 2,5 mm²",
+      "sw": "Kebo ya Shaba ya PVC 2.5mm²",
+      "pt": "Cabo de Cobre PVC 2,5mm²",
+      "ar": "كابل نحاسي PVC 2.5 ملم²"
+    },
+    "cat": "electronics",
+    "region": "africa",
+    "spec": "BS 6004 · 100m coil",
+    "spec_l10n": {
+      "fr": "BS 6004 · rouleau de 100 m",
+      "sw": "BS 6004 · roli 100m",
+      "pt": "BS 6004 · rolo 100m",
+      "ar": "BS 6004 · لفافة 100م"
+    },
+    "supplier": "CablePro Kenya",
+    "location": "Nairobi, Kenya",
+    "price": "$38 / coil",
+    "unit": "per 100m",
+    "rating": 4.4,
+    "reviews": 66,
+    "leadTime": "6 days",
+    "moq": "20 coils",
+    "thumb": "🔌"
+  },
+  {
+    "id": 22,
+    "name": "Industrial LED Floodlight 200W",
+    "name_l10n": {
+      "fr": "Projecteur LED industriel 200 W",
+      "sw": "Floodlight ya LED ya Viwandani 200W",
+      "pt": "Holofote LED Industrial 200W",
+      "ar": "كشاف LED صناعي 200 واط"
+    },
+    "cat": "electronics",
+    "region": "africa",
+    "spec": "IP65 · 20,000 lm",
+    "spec_l10n": {
+      "fr": "IP65 · 20 000 lm",
+      "sw": "IP65 · 20,000 lm",
+      "pt": "IP65 · 20.000 lm",
+      "ar": "IP65 · 20,000 لومن"
+    },
+    "supplier": "BrightPath Lighting",
+    "location": "Cairo, Egypt",
+    "price": "$29 / unit",
+    "unit": "per unit",
+    "rating": 4.5,
+    "reviews": 54,
+    "leadTime": "9 days",
+    "moq": "100 units",
+    "thumb": "💡"
+  },
+  {
+    "id": 23,
+    "name": "Industrial Epoxy Coating",
+    "name_l10n": {
+      "fr": "Revêtement époxy industriel",
+      "sw": "Mipako ya Epoxy ya Viwandani",
+      "pt": "Revestimento Epóxi Industrial",
+      "ar": "طلاء إيبوكسي صناعي"
+    },
+    "cat": "chemicals",
+    "region": "africa",
+    "spec": "2-component · anti-corrosion",
+    "spec_l10n": {
+      "fr": "2 composants · anticorrosion",
+      "sw": "Vipengele 2 · kuzuia kutu",
+      "pt": "2 componentes · anticorrosivo",
+      "ar": "مكونان · مضاد للتآكل"
+    },
+    "supplier": "ChemiGuard Industries",
+    "location": "Durban, South Africa",
+    "price": "$14 / liter",
+    "unit": "per liter",
+    "rating": 4.5,
+    "reviews": 38,
+    "leadTime": "12 days",
+    "moq": "100 liters",
+    "thumb": "🧪"
+  },
+  {
+    "id": 24,
+    "name": "Construction Adhesive 1kg",
+    "name_l10n": {
+      "fr": "Adhésif de construction 1 kg",
+      "sw": "Gundi ya Ujenzi 1kg",
+      "pt": "Adesivo de Construção 1kg",
+      "ar": "لاصق بناء 1 كجم"
+    },
+    "cat": "chemicals",
+    "region": "africa",
+    "spec": "Heavy-duty · waterproof",
+    "spec_l10n": {
+      "fr": "Haute résistance · imperméable",
+      "sw": "Nguvu ya juu · isiyopitisha maji",
+      "pt": "Resistente · à prova d'água",
+      "ar": "قوي · مقاوم للماء"
+    },
+    "supplier": "GlueMaster Africa",
+    "location": "Nairobi, Kenya",
+    "price": "$3.20 / tub",
+    "unit": "per kg",
+    "rating": 4.3,
+    "reviews": 72,
+    "leadTime": "5 days",
+    "moq": "500 tubs",
+    "thumb": "🧴"
+  },
+  {
+    "id": 25,
+    "name": "CNC Machining Center VMC-850",
+    "name_l10n": {
+      "fr": "Centre d'usinage CNC VMC-850",
+      "sw": "Kituo cha Uchakataji CNC VMC-850",
+      "pt": "Centro de Usinagem CNC VMC-850",
+      "ar": "مركز تشغيل CNC VMC-850"
+    },
+    "cat": "machinery",
+    "region": "asia",
+    "spec": "3-axis · 7.5 kW spindle",
+    "spec_l10n": {
+      "fr": "3 axes · broche 7,5 kW",
+      "sw": "Axes 3 · spindle 7.5 kW",
+      "pt": "3 eixos · fuso 7,5 kW",
+      "ar": "3 محاور · مغزل 7.5 كيلوواط"
+    },
+    "supplier": "Shenzhen Tooling Works",
+    "location": "Guangzhou, China",
+    "price": "$24,800",
+    "unit": "per unit",
+    "rating": 4.7,
+    "reviews": 58,
+    "leadTime": "35 days",
+    "moq": "1 unit",
+    "thumb": "🔧"
+  },
+  {
+    "id": 26,
+    "name": "Containerized Solar Kit 10kW",
+    "name_l10n": {
+      "fr": "Kit solaire conteneurisé 10 kW",
+      "sw": "Kifurushi cha Jua cha Kontena 10kW",
+      "pt": "Kit Solar Containerizado 10kW",
+      "ar": "طقم شمسي معبأ في حاويات 10 كيلوواط"
+    },
+    "cat": "electronics",
+    "region": "asia",
+    "spec": "All-in-one · off-grid ready",
+    "spec_l10n": {
+      "fr": "Tout-en-un · prêt hors réseau",
+      "sw": "Yote kwa moja · tayari nje ya gridi",
+      "pt": "Tudo-em-um · pronto off-grid",
+      "ar": "الكل في واحد · جاهز خارج الشبكة"
+    },
+    "supplier": "PowerSun Guangdong",
+    "location": "Shenzhen, China",
+    "price": "$8,900",
+    "unit": "per kit",
+    "rating": 4.6,
+    "reviews": 41,
+    "leadTime": "28 days",
+    "moq": "2 kits",
+    "thumb": "☀️"
+  },
+  {
+    "id": 27,
+    "name": "Cotton Ginning Machine 30TPD",
+    "name_l10n": {
+      "fr": "Égreneuse à coton 30 T/j",
+      "sw": "Mashine ya Kusafisha Pamba 30TPD",
+      "pt": "Descaroçador de Algodão 30TPD",
+      "ar": "آلة حلج القطن 30 طن/يوم"
+    },
+    "cat": "machinery",
+    "region": "asia",
+    "spec": "Roller gin · 98% lint recovery",
+    "spec_l10n": {
+      "fr": "Scie à rouleaux · 98 % de récupération",
+      "sw": "Roller gin · 98% urejeshaji",
+      "pt": "Serra de rolos · 98% recuperação",
+      "ar": "منشار أسطواني · استرداد 98٪"
+    },
+    "supplier": "Gujarat Agro Machinery",
+    "location": "Ahmedabad, India",
+    "price": "$32,000",
+    "unit": "per unit",
+    "rating": 4.5,
+    "reviews": 27,
+    "leadTime": "40 days",
+    "moq": "1 unit",
+    "thumb": "⚙️"
+  },
+  {
+    "id": 28,
+    "name": "Basmati Rice 1121 Steam",
+    "name_l10n": {
+      "fr": "Riz basmati 1121 étuvé",
+      "sw": "Mchele wa Basmati 1121 Steam",
+      "pt": "Arroz Basmati 1121 Vaporizado",
+      "ar": "أرز بسمتي 1121 مطبوخ بالبخار"
+    },
+    "cat": "food_beverage",
+    "region": "asia",
+    "spec": "Extra long grain · 2% broken",
+    "spec_l10n": {
+      "fr": "Grain extra long · 2 % de brisures",
+      "sw": "Nafaka ndefu · 2% iliyovunjika",
+      "pt": "Grão extra longo · 2% quebrado",
+      "ar": "حبة طويلة جداً · 2٪ مكسور"
+    },
+    "supplier": "Punjab Grains Export",
+    "location": "Amritsar, India",
+    "price": "$1,050 / ton",
+    "unit": "FOB Nhava Sheva",
+    "rating": 4.7,
+    "reviews": 132,
+    "leadTime": "12 days",
+    "moq": "25 tons",
+    "thumb": "🍚"
+  },
+  {
+    "id": 29,
+    "name": "Frozen White Shrimp 26/30",
+    "name_l10n": {
+      "fr": "Crevettes blanches surgelées 26/30",
+      "sw": "Kamba Weupe Waliohifadhiwa 26/30",
+      "pt": "Camarão Branco Congelado 26/30",
+      "ar": "جمبري أبيض مجمد 26/30"
+    },
+    "cat": "food_beverage",
+    "region": "asia",
+    "spec": "HOSO · 2kg block · HACCP",
+    "spec_l10n": {
+      "fr": "HOSO · bloc de 2 kg · HACCP",
+      "sw": "HOSO · kizuizi 2kg · HACCP",
+      "pt": "HOSO · bloco 2kg · HACCP",
+      "ar": "HOSO · كتلة 2 كجم · HACCP"
+    },
+    "supplier": "Mekong Seafood Co.",
+    "location": "Ho Chi Minh City, Vietnam",
+    "price": "$7.90 / kg",
+    "unit": "FOB",
+    "rating": 4.6,
+    "reviews": 74,
+    "leadTime": "18 days",
+    "moq": "10 tons",
+    "thumb": "🦐"
+  },
+  {
+    "id": 30,
+    "name": "Electric Forklift 2.5 Ton",
+    "name_l10n": {
+      "fr": "Chariot élévateur électrique 2,5 t",
+      "sw": "Forklift ya Umeme Tani 2.5",
+      "pt": "Empilhadeira Elétrica 2,5 Ton",
+      "ar": "رافعة شوكية كهربائية 2.5 طن"
+    },
+    "cat": "machinery",
+    "region": "asia",
+    "spec": "Li-ion · 80V · 3-stage mast",
+    "spec_l10n": {
+      "fr": "Lithium-ion · 80 V · mât 3 étages",
+      "sw": "Li-ion · 80V · mast hatua 3",
+      "pt": "Íon-lítio · 80V · mastro 3 estágios",
+      "ar": "ليثيوم · 80 فولت · عمود 3 مراحل"
+    },
+    "supplier": "Shanghai LiftPower",
+    "location": "Shanghai, China",
+    "price": "$18,600",
+    "unit": "per unit",
+    "rating": 4.5,
+    "reviews": 39,
+    "leadTime": "30 days",
+    "moq": "1 unit",
+    "thumb": "🏗️"
+  },
+  {
+    "id": 31,
+    "name": "Automotive Spark Plug Set",
+    "name_l10n": {
+      "fr": "Jeu de bougies d'allumage auto",
+      "sw": "Seti ya Spark Plugs za Magari",
+      "pt": "Kit de Velas de Ignição Automotivas",
+      "ar": "طقم شمعات إشعال للسيارات"
+    },
+    "cat": "automotive",
+    "region": "asia",
+    "spec": "Iridium · 4-pack · universal fit",
+    "spec_l10n": {
+      "fr": "Iridium · lot de 4 · universel",
+      "sw": "Iridium · pakiti 4 · universal",
+      "pt": "Iridio · 4 un. · universal",
+      "ar": "إيريديوم · 4 قطع · عالمي"
+    },
+    "supplier": "Kyoto Auto Parts",
+    "location": "Tokyo, Japan",
+    "price": "$26 / set",
+    "unit": "per set",
+    "rating": 4.6,
+    "reviews": 210,
+    "leadTime": "14 days",
+    "moq": "100 sets",
+    "thumb": "🚗"
+  },
+  {
+    "id": 32,
+    "name": "Medical Nitrile Gloves (Box)",
+    "name_l10n": {
+      "fr": "Gants nitrile médicaux (boîte)",
+      "sw": "Glovu za Nitrile za Matibabu (Boksi)",
+      "pt": "Luvas de Nitrila Médicas (Caixa)",
+      "ar": "قفازات نيتريل طبية (علبة)"
+    },
+    "cat": "healthcare",
+    "region": "asia",
+    "spec": "100 ct · powder-free · CE",
+    "spec_l10n": {
+      "fr": "100 un. · non poudrés · CE",
+      "sw": "100 · zisizo na unga · CE",
+      "pt": "100 un. · sem pó · CE",
+      "ar": "100 قطعة · خالية من البودرة · CE"
+    },
+    "supplier": "MediSafe Malaysia",
+    "location": "Kuala Lumpur, Malaysia",
+    "price": "$9.80 / box",
+    "unit": "per 100 ct",
+    "rating": 4.7,
+    "reviews": 95,
+    "leadTime": "10 days",
+    "moq": "500 boxes",
+    "thumb": "🧤"
+  },
+  {
+    "id": 33,
+    "name": "Ductile Iron Pipe Fittings",
+    "name_l10n": {
+      "fr": "Raccords fonte ductile",
+      "sw": "Viunganishi vya Chuma Ductile",
+      "pt": "Conexões de Ferro Dúctil",
+      "ar": "وصلات حديد مطيل"
+    },
+    "cat": "construction",
+    "region": "europe",
+    "spec": "DN80–DN300 · EN 545",
+    "spec_l10n": {
+      "fr": "DN80–DN300 · EN 545",
+      "sw": "DN80–DN300 · EN 545",
+      "pt": "DN80–DN300 · EN 545",
+      "ar": "DN80–DN300 · EN 545"
+    },
+    "supplier": "Bosphorus Casting",
+    "location": "Istanbul, Türkiye",
+    "price": "$180 / unit",
+    "unit": "per piece",
+    "rating": 4.5,
+    "reviews": 63,
+    "leadTime": "22 days",
+    "moq": "200 pcs",
+    "thumb": "🔩"
+  },
+  {
+    "id": 34,
+    "name": "Solar Inverter 20kW Three-Phase",
+    "name_l10n": {
+      "fr": "Onduleur solaire triphasé 20 kW",
+      "sw": "Inverter ya Jua 20kW Awamu Tatu",
+      "pt": "Inversor Solar 20kW Trifásico",
+      "ar": "عاكس شمسي 20 كيلوواط ثلاثي الطور"
+    },
+    "cat": "electronics",
+    "region": "europe",
+    "spec": "IP65 · 98.5% efficiency",
+    "spec_l10n": {
+      "fr": "IP65 · rendement 98,5 %",
+      "sw": "IP65 · ufanisi 98.5%",
+      "pt": "IP65 · eficiência 98,5%",
+      "ar": "IP65 · كفاءة 98.5٪"
+    },
+    "supplier": "Voltwerk Energy",
+    "location": "Berlin, Germany",
+    "price": "$2,750",
+    "unit": "per unit",
+    "rating": 4.7,
+    "reviews": 52,
+    "leadTime": "15 days",
+    "moq": "4 units",
+    "thumb": "🔋"
+  },
+  {
+    "id": 35,
+    "name": "Roasted Espresso Blend Coffee",
+    "name_l10n": {
+      "fr": "Café espresso torréfié en mélange",
+      "sw": "Kahawa ya Espresso Imechomwa",
+      "pt": "Café Torrado Blend Espresso",
+      "ar": "بن إسبريسو محمص"
+    },
+    "cat": "food_beverage",
+    "region": "europe",
+    "spec": "Dark roast · 1kg bags",
+    "spec_l10n": {
+      "fr": "Torréfaction foncée · sacs de 1 kg",
+      "sw": "Kuchomwa kukolea · mifuko 1kg",
+      "pt": "Torra escura · sacos 1kg",
+      "ar": "تحميص داكن · أكياس 1 كجم"
+    },
+    "supplier": "Torrefazione Milano",
+    "location": "Turin, Italy",
+    "price": "$11.50 / kg",
+    "unit": "per 1kg",
+    "rating": 4.8,
+    "reviews": 148,
+    "leadTime": "9 days",
+    "moq": "200 kg",
+    "thumb": "☕"
+  },
+  {
+    "id": 36,
+    "name": "Extra Virgin Olive Oil",
+    "name_l10n": {
+      "fr": "Huile d'olive extra vierge",
+      "sw": "Mafuta ya Zeituni ya Extra Virgin",
+      "pt": "Azeite de Oliva Extra Virgem",
+      "ar": "زيت زيتون بكر ممتاز"
+    },
+    "cat": "food_beverage",
+    "region": "europe",
+    "spec": "Cold pressed · acidity < 0.4%",
+    "spec_l10n": {
+      "fr": "Pressé à froid · acidité < 0,4 %",
+      "sw": "Baridi · asidi < 0.4%",
+      "pt": "Prensado a frio · acidez < 0,4%",
+      "ar": "عصر بارد · حموضة أقل من 0.4٪"
+    },
+    "supplier": "Andalusia Olive Co.",
+    "location": "Seville, Spain",
+    "price": "$4.20 / liter",
+    "unit": "per 5L tin",
+    "rating": 4.7,
+    "reviews": 186,
+    "leadTime": "14 days",
+    "moq": "100 tins",
+    "thumb": "🫒"
+  },
+  {
+    "id": 37,
+    "name": "Paracetamol 500mg Tablets",
+    "name_l10n": {
+      "fr": "Comprimés de paracétamol 500 mg",
+      "sw": "Vidonge vya Paracetamol 500mg",
+      "pt": "Comprimidos de Paracetamol 500mg",
+      "ar": "أقراص باراسيتامول 500 ملغ"
+    },
+    "cat": "healthcare",
+    "region": "asia",
+    "spec": "WHO-GMP · 1000 tablets",
+    "spec_l10n": {
+      "fr": "BPF OMS · 1000 comprimés",
+      "sw": "WHO-GMP · vidonge 1000",
+      "pt": "BPF-OMS · 1000 comprimidos",
+      "ar": "GMP منظمة الصحة العالمية · 1000 قرص"
+    },
+    "supplier": "Mumbai Pharma Labs",
+    "location": "Mumbai, India",
+    "price": "$3.60 / pack",
+    "unit": "per 1000 ct",
+    "rating": 4.6,
+    "reviews": 67,
+    "leadTime": "15 days",
+    "moq": "500 packs",
+    "thumb": "💊"
+  },
+  {
+    "id": 38,
+    "name": "Industrial Robot Arm 6-Axis",
+    "name_l10n": {
+      "fr": "Bras robotique industriel 6 axes",
+      "sw": "Mkono wa Roboti wa Viwandani 6-Axis",
+      "pt": "Braço Robótico Industrial 6 Eixos",
+      "ar": "ذراع روبوت صناعي 6 محاور"
+    },
+    "cat": "machinery",
+    "region": "europe",
+    "spec": "16 kg payload · 1.7m reach",
+    "spec_l10n": {
+      "fr": "Charge 16 kg · portée 1,7 m",
+      "sw": "Mzigo 16kg · kufikia 1.7m",
+      "pt": "Carga 16kg · alcance 1,7m",
+      "ar": "حمولة 16 كجم · مدى 1.7م"
+    },
+    "supplier": "Stuttgart Robotics",
+    "location": "Stuttgart, Germany",
+    "price": "$41,000",
+    "unit": "per unit",
+    "rating": 4.8,
+    "reviews": 24,
+    "leadTime": "60 days",
+    "moq": "1 unit",
+    "thumb": "🤖"
+  },
+  {
+    "id": 39,
+    "name": "Car Alloy Wheels 18\"",
+    "name_l10n": {
+      "fr": "Jantes alliage auto 18\"",
+      "sw": "Magurudumu ya Alloy ya Magari 18\"",
+      "pt": "Rodas de Liga Leve 18\"",
+      "ar": "جنوط سبائك معدنية للسيارات 18 بوصة"
+    },
+    "cat": "automotive",
+    "region": "asia",
+    "spec": "5x114.3 · 5-spoke · silver",
+    "spec_l10n": {
+      "fr": "5x114,3 · 5 branches · argent",
+      "sw": "5x114.3 · spika 5 · fedha",
+      "pt": "5x114,3 · 5 raios · prata",
+      "ar": "5x114.3 · 5 أضلاع · فضي"
+    },
+    "supplier": "Pearl Wheel Industry",
+    "location": "Shenzhen, China",
+    "price": "$84 / wheel",
+    "unit": "per unit",
+    "rating": 4.4,
+    "reviews": 45,
+    "leadTime": "25 days",
+    "moq": "50 wheels",
+    "thumb": "🛞"
+  },
+  {
+    "id": 40,
+    "name": "Farm Tractor 75 HP",
+    "name_l10n": {
+      "fr": "Tracteur agricole 75 ch",
+      "sw": "Trekta ya Shamba 75 HP",
+      "pt": "Trator Agrícola 75 HP",
+      "ar": "جرار زراعي 75 حصان"
+    },
+    "cat": "machinery",
+    "region": "asia",
+    "spec": "4WD · 3-point hitch",
+    "spec_l10n": {
+      "fr": "4x4 · attelage 3 points",
+      "sw": "4WD · hitch ya pointi 3",
+      "pt": "4WD · engate 3 pontos",
+      "ar": "دفع رباعي · وصلة 3 نقاط"
+    },
+    "supplier": "Mahindra Bharat Agri",
+    "location": "Pune, India",
+    "price": "$23,500",
+    "unit": "per unit",
+    "rating": 4.6,
+    "reviews": 88,
+    "leadTime": "20 days",
+    "moq": "1 unit",
+    "thumb": "🚜"
+  },
+  {
+    "id": 41,
+    "name": "Brazilian Arabica Coffee Green",
+    "name_l10n": {
+      "fr": "Café arabica brésilien vert",
+      "sw": "Kahawa ya Arabica ya Brazili Mbichi",
+      "pt": "Café Arábica Brasileiro Cru",
+      "ar": "بن عربي برازيلي خام"
+    },
+    "cat": "agro",
+    "region": "americas",
+    "spec": "NY2 · 60kg bags",
+    "spec_l10n": {
+      "fr": "NY2 · sacs de 60 kg",
+      "sw": "NY2 · mifuko 60kg",
+      "pt": "NY2 · sacas 60kg",
+      "ar": "NY2 · أكياس 60 كجم"
+    },
+    "supplier": "Cerrado Coffee Export",
+    "location": "São Paulo, Brazil",
+    "price": "$4.90 / kg",
+    "unit": "FOB Santos",
+    "rating": 4.7,
+    "reviews": 112,
+    "leadTime": "11 days",
+    "moq": "10 tons",
+    "thumb": "☕"
+  },
+  {
+    "id": 42,
+    "name": "Soybean Meal 48% Protein",
+    "name_l10n": {
+      "fr": "Tourteau de soja 48 % de protéines",
+      "sw": "Unga wa Soya 48% Protini",
+      "pt": "Farelo de Soja 48% Proteína",
+      "ar": "كسب فول الصويا 48٪ بروتين"
+    },
+    "cat": "agro",
+    "region": "americas",
+    "spec": "GMO-free · pellet form",
+    "spec_l10n": {
+      "fr": "Sans OGM · granulés",
+      "sw": "Bila GMO · kidonge",
+      "pt": "Sem OGM · peletizado",
+      "ar": "خالٍ من الكائنات المعدلة · حبيبات"
+    },
+    "supplier": "Pampa Agri Industries",
+    "location": "Rosario, Argentina",
+    "price": "$420 / ton",
+    "unit": "FOB",
+    "rating": 4.4,
+    "reviews": 58,
+    "leadTime": "16 days",
+    "moq": "50 tons",
+    "thumb": "🌾"
+  },
+  {
+    "id": 43,
+    "name": "Denim Fabric 14oz",
+    "name_l10n": {
+      "fr": "Tissu denim 14 oz",
+      "sw": "Kitambaa cha Denim 14oz",
+      "pt": "Tecido Denim 14oz",
+      "ar": "قماش دنيم 14 أونصة"
+    },
+    "cat": "textiles",
+    "region": "americas",
+    "spec": "Indigo · 67\" width · 100% cotton",
+    "spec_l10n": {
+      "fr": "Indigo · laize 67\" · 100 % coton",
+      "sw": "Indigo · upana 67\" · pamba 100%",
+      "pt": "Índigo · largura 67\" · 100% algodão",
+      "ar": "نيلي · عرض 67 بوصة · قطن 100٪"
+    },
+    "supplier": "Monterrey Mills",
+    "location": "Monterrey, Mexico",
+    "price": "$3.40 / meter",
+    "unit": "FOB",
+    "rating": 4.5,
+    "reviews": 39,
+    "leadTime": "20 days",
+    "moq": "3,000 m",
+    "thumb": "🧵"
+  },
+  {
+    "id": 44,
+    "name": "Portland Cement 42.5N",
+    "name_l10n": {
+      "fr": "Ciment Portland 42.5N",
+      "sw": "Saruji ya Portland 42.5N",
+      "pt": "Cimento Portland 42.5N",
+      "ar": "أسمنت بورتلاند 42.5N"
+    },
+    "cat": "construction",
+    "region": "americas",
+    "spec": "Bulk / 50kg bags",
+    "spec_l10n": {
+      "fr": "En vrac / sacs de 50 kg",
+      "sw": "Kwa wingi / mifuko 50kg",
+      "pt": "Granel / sacos 50kg",
+      "ar": "بالجملة / أكياس 50 كجم"
+    },
+    "supplier": "Caribe Cemento",
+    "location": "Cartagena, Colombia",
+    "price": "$96 / ton",
+    "unit": "FOB",
+    "rating": 4.5,
+    "reviews": 77,
+    "leadTime": "12 days",
+    "moq": "100 tons",
+    "thumb": "🧱"
+  },
+  {
+    "id": 45,
+    "name": "Vitamin C 1000mg Effervescent",
+    "name_l10n": {
+      "fr": "Vitamine C 1000 mg effervescente",
+      "sw": "Vitamini C 1000mg Effervescent",
+      "pt": "Vitamina C 1000mg Efervescente",
+      "ar": "فيتامين C 1000 ملغ فوار"
+    },
+    "cat": "healthcare",
+    "region": "americas",
+    "spec": "30 tablets · orange flavour",
+    "spec_l10n": {
+      "fr": "30 comprimés · goût orange",
+      "sw": "Vidonge 30 · ladha ya machungwa",
+      "pt": "30 comprimidos · sabor laranja",
+      "ar": "30 قرصاً · نكهة البرتقال"
+    },
+    "supplier": "Meridian Nutraceuticals",
+    "location": "Chicago, United States",
+    "price": "$8.40 / tube",
+    "unit": "per 30 ct",
+    "rating": 4.6,
+    "reviews": 140,
+    "leadTime": "7 days",
+    "moq": "200 tubes",
+    "thumb": "🍊"
+  },
+  {
+    "id": 46,
+    "name": "LED Grow Lights 600W",
+    "name_l10n": {
+      "fr": "Lampes LED de culture 600 W",
+      "sw": "Taa za LED za Kukuza 600W",
+      "pt": "Luzes de Cultivo LED 600W",
+      "ar": "أضواء نمو LED 600 واط"
+    },
+    "cat": "electronics",
+    "region": "americas",
+    "spec": "Full spectrum · dimmable",
+    "spec_l10n": {
+      "fr": "Spectre complet · à variation",
+      "sw": "Spectrum kamili · inayobadilika",
+      "pt": "Espectro completo · dimerizável",
+      "ar": "طيف كامل · قابل للتعتيم"
+    },
+    "supplier": "GroLight Labs",
+    "location": "Los Angeles, United States",
+    "price": "$119 / unit",
+    "unit": "per unit",
+    "rating": 4.7,
+    "reviews": 310,
+    "leadTime": "5 days",
+    "moq": "20 units",
+    "thumb": "💡"
+  },
+  {
+    "id": 47,
+    "name": "Surgical Face Masks (Box)",
+    "name_l10n": {
+      "fr": "Masques chirurgicaux (boîte)",
+      "sw": "Masks za Upasuaji (Boksi)",
+      "pt": "Máscaras Cirúrgicas (Caixa)",
+      "ar": "أقنعة جراحية (علبة)"
+    },
+    "cat": "healthcare",
+    "region": "asia",
+    "spec": "3-ply · 50 ct · EN 14683",
+    "spec_l10n": {
+      "fr": "3 plis · 50 un. · EN 14683",
+      "sw": "3-ply · 50 · EN 14683",
+      "pt": "3 camadas · 50 un. · EN 14683",
+      "ar": "3 طبقات · 50 قطعة · EN 14683"
+    },
+    "supplier": "Shanghai CarePro",
+    "location": "Shanghai, China",
+    "price": "$4.50 / box",
+    "unit": "per 50 ct",
+    "rating": 4.5,
+    "reviews": 190,
+    "leadTime": "9 days",
+    "moq": "1,000 boxes",
+    "thumb": "😷"
+  },
+  {
+    "id": 48,
+    "name": "Deglet Nour Dates",
+    "name_l10n": {
+      "fr": "Dattes Deglet Nour",
+      "sw": "Tende za Deglet Nour",
+      "pt": "Tâmaras Deglet Nour",
+      "ar": "تمر دقلة نور"
+    },
+    "cat": "food_beverage",
+    "region": "middle_east",
+    "spec": "Premium · 5kg carton",
+    "spec_l10n": {
+      "fr": "Premium · carton de 5 kg",
+      "sw": "Premium · kadi 5kg",
+      "pt": "Premium · caixa 5kg",
+      "ar": "فاخر · كرتونة 5 كجم"
+    },
+    "supplier": "Najd Dates Farm",
+    "location": "Riyadh, Saudi Arabia",
+    "price": "$6.80 / kg",
+    "unit": "per 5kg",
+    "rating": 4.7,
+    "reviews": 96,
+    "leadTime": "10 days",
+    "moq": "200 cartons",
+    "thumb": "🌴"
+  },
+  {
+    "id": 49,
+    "name": "PET Resin Bottle Grade",
+    "name_l10n": {
+      "fr": "Résine PET qualité bouteille",
+      "sw": "Resin ya PET ya Chupa",
+      "pt": "Resina PET Grau Garrafa",
+      "ar": "راتنج PET لصناعة الزجاجات"
+    },
+    "cat": "chemicals",
+    "region": "middle_east",
+    "spec": "Intrinsic viscosity 0.80",
+    "spec_l10n": {
+      "fr": "Viscosité intrinsèque 0,80",
+      "sw": "Mnato wa ndani 0.80",
+      "pt": "Viscosidade intrínseca 0,80",
+      "ar": "لزوجة جوهرية 0.80"
+    },
+    "supplier": "Gulf Polymers",
+    "location": "Abu Dhabi, UAE",
+    "price": "$980 / ton",
+    "unit": "FOB Jebel Ali",
+    "rating": 4.5,
+    "reviews": 48,
+    "leadTime": "18 days",
+    "moq": "50 tons",
+    "thumb": "🧴"
+  },
+  {
+    "id": 50,
+    "name": "Solar Water Pump 3HP",
+    "name_l10n": {
+      "fr": "Pompe à eau solaire 3 ch",
+      "sw": "Pampu ya Maji ya Jua 3HP",
+      "pt": "Bomba de Água Solar 3HP",
+      "ar": "مضخة مياه شمسية 3 حصان"
+    },
+    "cat": "machinery",
+    "region": "middle_east",
+    "spec": "Submersible · AC/DC hybrid",
+    "spec_l10n": {
+      "fr": "Submersible · hybride AC/DC",
+      "sw": "Submersible · AC/DC mseto",
+      "pt": "Submersível · híbrido AC/DC",
+      "ar": "غاطسة · هجين تيار متردد/مستمر"
+    },
+    "supplier": "DesertFlow Irrigation",
+    "location": "Dubai, UAE",
+    "price": "$1,450",
+    "unit": "per unit",
+    "rating": 4.6,
+    "reviews": 33,
+    "leadTime": "21 days",
+    "moq": "2 units",
+    "thumb": "🌊"
+  },
+  {
+    "id": 51,
+    "name": "Merino Wool Yarn",
+    "name_l10n": {
+      "fr": "Fil de laine mérinos",
+      "sw": "Uzi wa Sufuli ya Merino",
+      "pt": "Fio de Lã Merino",
+      "ar": "خيط صوف ميرينو"
+    },
+    "cat": "textiles",
+    "region": "oceania",
+    "spec": "2-ply · 21 micron",
+    "spec_l10n": {
+      "fr": "2 fils · 21 microns",
+      "sw": "2-ply · micron 21",
+      "pt": "2 cabos · 21 mícrons",
+      "ar": "مجدول · 21 ميكرون"
+    },
+    "supplier": "OzWool Exports",
+    "location": "Sydney, Australia",
+    "price": "$18 / kg",
+    "unit": "FOB",
+    "rating": 4.7,
+    "reviews": 42,
+    "leadTime": "19 days",
+    "moq": "500 kg",
+    "thumb": "🧶"
+  },
+  {
+    "id": 52,
+    "name": "Manuka Honey MGO 400+",
+    "name_l10n": {
+      "fr": "Miel de manuka MGO 400+",
+      "sw": "Asali ya Manuka MGO 400+",
+      "pt": "Mel Manuka MGO 400+",
+      "ar": "عسل مانوكا MGO 400+"
+    },
+    "cat": "food_beverage",
+    "region": "oceania",
+    "spec": "UMF 12+ · 250g jar",
+    "spec_l10n": {
+      "fr": "UMF 12+ · pot de 250 g",
+      "sw": "UMF 12+ · jar 250g",
+      "pt": "UMF 12+ · pote 250g",
+      "ar": "UMF 12+ · عبوة 250 جم"
+    },
+    "supplier": "Southern Cross Honey",
+    "location": "Auckland, New Zealand",
+    "price": "$38 / jar",
+    "unit": "per 250g",
+    "rating": 4.8,
+    "reviews": 121,
+    "leadTime": "13 days",
+    "moq": "50 jars",
+    "thumb": "🍯"
+  },
+  {
+    "id": 53,
+    "name": "Disposable Syringes 5ml",
+    "name_l10n": {
+      "fr": "Seringues jetables 5 ml",
+      "sw": "Siringi za Kutupwa 5ml",
+      "pt": "Seringas Descartáveis 5ml",
+      "ar": "محاقن يمكن التخلص منها 5 مل"
+    },
+    "cat": "healthcare",
+    "region": "asia",
+    "spec": "ISO 7886 · sterile · Luer lock",
+    "spec_l10n": {
+      "fr": "ISO 7886 · stérile · verrou Luer",
+      "sw": "ISO 7886 · steril · Luer lock",
+      "pt": "ISO 7886 · estéril · Luer lock",
+      "ar": "ISO 7886 · معقم · قفل لور"
+    },
+    "supplier": "Medika Nusantara",
+    "location": "Jakarta, Indonesia",
+    "price": "$0.09 / unit",
+    "unit": "per 1000 ct",
+    "rating": 4.4,
+    "reviews": 28,
+    "leadTime": "17 days",
+    "moq": "100,000 pcs",
+    "thumb": "💉"
+  },
+  {
+    "id": 54,
+    "name": "Aluminum Ingot A7",
+    "name_l10n": {
+      "fr": "Lingots d'aluminium A7",
+      "sw": "Ingot za Alumini A7",
+      "pt": "Lingotes de Alumínio A7",
+      "ar": "سبائك ألومنيوم A7"
+    },
+    "cat": "chemicals",
+    "region": "middle_east",
+    "spec": "99.7% purity · 20kg ingots",
+    "spec_l10n": {
+      "fr": "Pureté 99,7 % · lingots de 20 kg",
+      "sw": "Usafi 99.7% · ingot 20kg",
+      "pt": "Pureza 99,7% · lingotes 20kg",
+      "ar": "نقاء 99.7٪ · سبائك 20 كجم"
+    },
+    "supplier": "Qatar Metals Trading",
+    "location": "Doha, Qatar",
+    "price": "$2,650 / ton",
+    "unit": "FOB",
+    "rating": 4.6,
+    "reviews": 51,
+    "leadTime": "15 days",
+    "moq": "25 tons",
+    "thumb": "🪨"
+  },
+  {
+    "id": 55,
+    "name": "Heavy Duty Batteries 12V 200Ah",
+    "name_l10n": {
+      "fr": "Batteries haute capacité 12 V 200 Ah",
+      "sw": "Betri za Uzito 12V 200Ah",
+      "pt": "Baterias Pesadas 12V 200Ah",
+      "ar": "بطاريات ثقيلة 12 فولت 200 أمبير"
+    },
+    "cat": "automotive",
+    "region": "americas",
+    "spec": "AGM · deep cycle",
+    "spec_l10n": {
+      "fr": "AGM · cycle profond",
+      "sw": "AGM · mzunguko wa kina",
+      "pt": "AGM · ciclo profundo",
+      "ar": "AGM · دورة عميقة"
+    },
+    "supplier": "MouraTech Brazil",
+    "location": "São Paulo, Brazil",
+    "price": "$210 / unit",
+    "unit": "per unit",
+    "rating": 4.5,
+    "reviews": 84,
+    "leadTime": "12 days",
+    "moq": "20 units",
+    "thumb": "🔋"
+  }
+]

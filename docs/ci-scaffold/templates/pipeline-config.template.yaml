@@ -1,0 +1,52 @@
+# ==============================================================================
+# PipelineConfig — modèle d'artefact (Fondement immuable, versionné).
+# Copier vers config/<domaine>/<nom>/<nom>.<semver>.yaml puis renseigner.
+# Valider au stage 1 avec schema/pipeline-config.schema.json + invariants du §6.
+#
+# Règles :
+#   - semver obligatoire ; une config promue n'est JAMAIS modifiée.
+#   - Aucun secret littéral : placeholders ${PIPELINE_*} résolus au déploiement.
+# ==============================================================================
+api_version: pipeline/v1
+
+meta:
+  name: <pipeline-name>                 # unique, ex: rag-main-index
+  semver: <major.minor.patch>           # ex: 1.2.0
+  domain: <rag|guardrail|infra>         # adaptateur de domaine branché aux stages 2 et 5
+  owner_team: <team>                    # équipe propriétaire de la config
+  created_at: <ISO-8601>                # ex: 2026-08-06T09:00:00Z
+
+spec:
+  stages:
+    validate:
+      enabled: true
+      schema_ref: schema/pipeline-config.schema.json
+    test:
+      enabled: true
+      suites:                          # listes des suites de l'adaptateur de domaine
+        - unit_config
+        - integration_domain
+        - regression_project
+    promote:
+      strategy: manual                 # manual | auto
+      approvals_required: 1            # >= 1 si parameters.production existe
+    deploy:
+      canary_enabled: false            # optionnel selon le domaine
+      drift_check_enabled: true
+  gates:
+    required:
+      - schema
+      - invariants
+      - lint
+      - secret_scan
+      - tests
+  parameters:
+    # Matrice env → valeurs effectives. SEULE source de variation entre deux runs.
+    staging:
+      base_url: ${PIPELINE_STAGING_BASE_URL}
+      <domaine_key>: <valeur>
+    production:
+      base_url: ${PIPELINE_PRODUCTION_BASE_URL}
+      <domaine_key>: <valeur>
+  rollback:
+    keep_previous_versions: 3          # >= 1 si un environnement production est défini
