@@ -52,3 +52,7 @@ ignore = ["B008", "B904", "TC003"]
 testpaths = ["tests"]
 asyncio_mode = "auto"
 pythonpath = ["src"]
+
+[tool.vercel]
+entrypoint = "src.alloba.main:app"
+Learn More: https://vercel.com/docs/frameworks/backend/fastapi#exporting-the-fastapi-application
