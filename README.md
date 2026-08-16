@@ -1,10 +1,8 @@
 # Alloba
 
-Alloba is the gateway and agentic sourcing service for **ispaces Commerce**
-(AfroMART) — a Pan-African B2B marketplace. It is the rebranded successor of
-the standalone Afromart server, organised into a clean, cloud-ready monorepo.
-It also hosts **Alloba Training**, the immersive micro-training / certification
-engine (rebranded successor of the OnboardXR service).
+Alloba is the gateway and agentic sourcing service standalone server, organised into a clean, cloud-ready monorepo.
+It also hosts **Alloba Training**, an immersive micro-training / certification
+engine .
 
 > Version: 0.3.0 · License: MIT · Français : voir [README.fr.md](README.fr.md)
 
