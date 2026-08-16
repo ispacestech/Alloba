@@ -1,0 +1,21 @@
+# Keep the build context light: only the files the image needs.
+archive/
+docs/
+prompts/
+serverless/
+scripts/
+tests/
+kb/
+.bench/
+.git/
+.github/
+.vscode/
+.idea/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+.env
+.env.*
+rag_index/

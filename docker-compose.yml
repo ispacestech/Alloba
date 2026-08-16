@@ -1,0 +1,79 @@
+services:
+  gateway:
+    image: alloba/gateway:${ALLOBA_IMAGE_TAG:-0.3.0}
+    build:
+      context: .
+    container_name: alloba-gateway
+    ports:
+      - "${ALLOBA_PORT:-8582}:8582"
+    environment:
+      ALLOBA_HOST: "0.0.0.0"
+      ALLOBA_PORT: "8582"
+      # Platform backend to proxy to (ispaces Commerce). Override via .env.
+      ALLOBA_BACKEND_URL: "${ALLOBA_BACKEND_URL:-http://host.docker.internal:8561}"
+      ALLOBA_OLLAMA_BASE_URL: "${ALLOBA_OLLAMA_BASE_URL:-http://host.docker.internal:11434}"
+      ALLOBA_LLM_MODEL: "${ALLOBA_LLM_MODEL:-llama3.2:1b}"
+      ALLOBA_EMBEDDING_MODEL: "${ALLOBA_EMBEDDING_MODEL:-nomic-embed-text}"
+      ALLOBA_RAG_TOP_K: "${ALLOBA_RAG_TOP_K:-4}"
+      ALLOBA_AGENT_MODE: "${ALLOBA_AGENT_MODE:-auto}"
+      ALLOBA_AGENT_TOOL_MODELS: "${ALLOBA_AGENT_TOOL_MODELS:-qwen3.5,qwen3.6,qwen2.5,llama3.3}"
+      ALLOBA_AGENT_MAX_STEPS: "${ALLOBA_AGENT_MAX_STEPS:-6}"
+      ALLOBA_AGENT_DEFAULT_LANGUAGE: "${ALLOBA_AGENT_DEFAULT_LANGUAGE:-en}"
+      # CORS allow-list — never "*". Add the frontend origin(s) you serve.
+      ALLOBA_ALLOWED_ORIGINS: "${ALLOBA_ALLOWED_ORIGINS:-http://localhost:3005,http://localhost:8582}"
+    volumes:
+      - "./rag_index:/app/rag_index:ro"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8582/v1/gateway/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+
+  training-db:
+    image: postgres:16-alpine
+    container_name: alloba-training-db
+    environment:
+      POSTGRES_USER: ${ALLOBA_TRAINING_POSTGRES_USER:-alloba_training}
+      POSTGRES_PASSWORD: ${ALLOBA_TRAINING_POSTGRES_PASSWORD:-changeme_in_prod}
+      POSTGRES_DB: ${ALLOBA_TRAINING_POSTGRES_DB:-alloba_training}
+    volumes:
+      - alloba_training_pgdata:/var/lib/postgresql/data
+    # Infrastructure : port 5432 non exposé à l'hôte (réservé au réseau interne).
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${ALLOBA_TRAINING_POSTGRES_USER:-alloba_training}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  training:
+    image: alloba/training:${ALLOBA_IMAGE_TAG:-0.3.0}
+    build:
+      context: .
+    container_name: alloba-training-api
+    depends_on:
+      training-db:
+        condition: service_healthy
+    ports:
+      - "${ALLOBA_TRAINING_PORT:-8020}:8020"
+    environment:
+      ALLOBA_TRAINING_DATABASE_URL: "postgresql+psycopg2://${ALLOBA_TRAINING_POSTGRES_USER:-alloba_training}:${ALLOBA_TRAINING_POSTGRES_PASSWORD:-changeme_in_prod}@training-db:5432/${ALLOBA_TRAINING_POSTGRES_DB:-alloba_training}"
+      # CORS allow-list — never "*". Add the training frontend origin(s).
+      ALLOBA_TRAINING_ALLOWED_ORIGINS: "${ALLOBA_TRAINING_ALLOWED_ORIGINS:-http://localhost:3020,http://127.0.0.1:3020}"
+      ALLOBA_TRAINING_API_KEY: "${ALLOBA_TRAINING_API_KEY:-}"
+      # Shared Ollama endpoint for the optional generative branching (Alloba prefix).
+      ALLOBA_TRAINING_OLLAMA_BASE_URL: "${ALLOBA_TRAINING_OLLAMA_BASE_URL:-http://host.docker.internal:11434}"
+      ALLOBA_TRAINING_OLLAMA_MODEL: "${ALLOBA_TRAINING_OLLAMA_MODEL:-llama3.2}"
+    command: ["uvicorn", "alloba.training.main:app", "--host", "0.0.0.0", "--port", "8020"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8020/api/v1/health')"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 15s
+    restart: unless-stopped
+
+volumes:
+  alloba_training_pgdata:
