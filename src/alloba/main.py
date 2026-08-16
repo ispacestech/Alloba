@@ -50,3 +50,9 @@ async def catch_all_proxy(request: Request, path: str):
     if path in {"", "favicon.ico"}:
         return JSONResponse(status_code=404, content={"detail": "Not found"})
     return await proxy_to_backend(request, path)
+
+
+
+[tool.vercel]
+entrypoint = "src.alloba.main:app"
+Learn More: https://vercel.com/docs/frameworks/backend/fastapi#exporting-the-fastapi-application
