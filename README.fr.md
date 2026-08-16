@@ -1,10 +1,8 @@
 # Alloba
 
-Alloba est la passerelle et le service de sourcing agentique d'**ispaces
-Commerce** (AfroMART), un marché B2B panafricain. C'est le successeur rebrandé
-du serveur autonome Afromart, organisé en monorepo propre et prêt pour le cloud.
+Alloba est la passerelle et le service de sourcing agentique  organisé en monorepo propre et prêt pour le cloud.
 Il héberge aussi **Alloba Training**, le moteur de micro-formation immersive et
-de certification (successeur rebrandé du service OnboardXR).
+de certification .
 
 > Version : 0.3.0 · Licence : MIT · English : see [README.md](README.md)
 
