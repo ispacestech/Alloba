@@ -1,0 +1,167 @@
+# ==============================================================================
+# Pipeline Config CI — scaffold générique (stages 1 à 5 du runbook).
+# Adaptable à GitLab CI (même séquence de jobs).
+#
+# Prérequis : outils de validation (ajv/jsonschema, yamllint, gitleaks), les
+# suites de tests du projet cible (ruff, pytest) et les adaptateurs de domaine.
+# Scripts `./ci/*.sh` : fournis par le projet qui branche ce scaffold
+# (resolve-config, validate-invariants, render-views, apply, verify,
+#  drift-check, rollback).
+#
+# Déroulement (portes du runbook) :
+#   - PR / push : validate -> test -> stage. Le CI bot ne déploie JAMAIS seul :
+#     le déploiement (stage 5) ne démarre qu'après une promotion manuelle.
+#   - workflow_dispatch promote_to=staging    : promote (env "staging") puis
+#     deploy+verify en staging.
+#   - workflow_dispatch promote_to=production : promote (env "production" ;
+#     required reviewers = porte humaine) puis deploy+verify en production.
+#
+# Variables secrètes : toutes préfixées PIPELINE_* (jamais commitées).
+# Variables non secrètes (URLs, version précédente) : repository variables
+# vars.PIPELINE_* (déclarées dans l'onglet Settings > Secrets and variables).
+# ==============================================================================
+name: pipeline-config-ci
+
+"on":
+  pull_request:
+    paths:
+      - "config/**"
+      - ".github/workflows/pipeline-config-ci.yml"
+  push:
+    branches: [main]
+    paths:
+      - "config/**"
+  workflow_dispatch:
+    inputs:
+      promote_to:
+        type: choice
+        options: [staging, production]
+        required: true
+        default: staging
+      config_path:
+        type: string
+        required: false
+        description: Chemin de la config candidate (ex config/rag/main-index/main-index.1.2.0.yaml). Vide = résolu par ci/resolve-config.sh.
+      config_name:
+        type: string
+        required: false
+        description: meta.name de la config (tag immuable du stage 4).
+      config_semver:
+        type: string
+        required: false
+        description: meta.semver de la config (tag immuable du stage 4).
+
+concurrency:
+  group: pipeline-config-${{ inputs.config_name || github.event_name }}
+  cancel-in-progress: false          # verrou : 1 run simultané par config
+
+env:
+  PIPELINE_CI_ENV: "${{ inputs.promote_to || (github.ref == 'refs/heads/main' && 'production' || 'staging') }}"
+  PIPELINE_ARTIFACT_DIR: artifacts
+
+jobs:
+  validate:
+    name: "1-validate (${{ env.PIPELINE_CI_ENV }})"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Résoudre la config cible
+        id: resolve
+        run: |
+          if [ -n "${{ inputs.config_path }}" ]; then
+            echo "config_file=${{ inputs.config_path }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "config_file=$(./ci/resolve-config.sh)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Schema (structure)
+        run: ajv validate -s schema/pipeline-config.schema.json -d "${{ steps.resolve.outputs.config_file }}"
+      - name: Invariants sémantiques (§6 du runbook)
+        run: ./ci/validate-invariants.sh "${{ steps.resolve.outputs.config_file }}"   # script fourni par le projet
+      - name: Lint YAML
+        run: yamllint "${{ steps.resolve.outputs.config_file }}"
+      - name: Secret scan
+        run: gitleaks detect --config-path ci/gitleaks.toml --redact
+
+  test:
+    name: "2-test (${{ env.PIPELINE_CI_ENV }})"
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Tests unitaires config
+        run: pytest tests/test_config_invariants.py
+      - name: Lint projet cible
+        run: ruff check .
+      - name: Intégration domaine (adaptateur, ex. ispaces)
+        run: |
+          curl -fsS -X POST "${{ vars.PIPELINE_STAGING_BASE_URL }}/v1/rag/rebuild"
+          curl -fsS -X POST "${{ vars.PIPELINE_STAGING_BASE_URL }}/v1/rag/query" \
+            -H "Content-Type: application/json" \
+            -d '{"question":"smoke","top_k":1}' | grep -q "answer"
+
+  stage:
+    name: "3-stage (${{ env.PIPELINE_CI_ENV }})"
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Résoudre la config cible
+        id: resolve
+        run: |
+          if [ -n "${{ inputs.config_path }}" ]; then
+            echo "config_file=${{ inputs.config_path }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "config_file=$(./ci/resolve-config.sh)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Rendu déterministe des vues (Fondement -> Vue)
+        run: ./ci/render-views.sh "${{ steps.resolve.outputs.config_file }}" "$PIPELINE_CI_ENV" "$PIPELINE_ARTIFACT_DIR"
+      - name: Checksums des artefacts
+        run: |
+          find "$PIPELINE_ARTIFACT_DIR" -type f -exec sha256sum {} + > "$PIPELINE_ARTIFACT_DIR/MANIFEST.sha256"
+      - name: Smoke staging
+        run: curl -fsS "${{ vars.PIPELINE_STAGING_BASE_URL }}/health"
+      - name: Publier manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: pipeline-config-${{ env.PIPELINE_CI_ENV }}
+          path: ${{ env.PIPELINE_ARTIFACT_DIR }}
+
+  promote:
+    name: "4-promote -> ${{ inputs.promote_to }}"
+    needs: stage
+    runs-on: ubuntu-latest
+    environment: ${{ inputs.promote_to }}   # "production" => required reviewers (porte humaine)
+    if: ${{ github.event_name == 'workflow_dispatch' }}
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-config-${{ env.PIPELINE_CI_ENV }}
+      - name: Vérifier checksum promu
+        run: sha256sum -c MANIFEST.sha256
+      - name: Créer tag immuable
+        run: |
+          git tag "config/${{ inputs.config_name }}/${{ inputs.config_semver }}/$GITHUB_SHA"
+          git push origin "config/${{ inputs.config_name }}/${{ inputs.config_semver }}/$GITHUB_SHA"
+
+  deploy_verify:
+    name: "5-deploy+verify -> ${{ env.PIPELINE_CI_ENV }}"
+    needs: promote
+    if: ${{ needs.promote.result == 'success' }}   # jamais de déploiement sans promote vert
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: pipeline-config-${{ env.PIPELINE_CI_ENV }}
+      - name: Appliquer (vues rendues)
+        run: ./ci/apply.sh "$PIPELINE_CI_ENV" "$PIPELINE_ARTIFACT_DIR"
+      - name: Verify health + e2e
+        run: ./ci/verify.sh "$PIPELINE_CI_ENV"
+      - name: Drift check (checksum servi == checksum promu)
+        run: ./ci/drift-check.sh "$PIPELINE_CI_ENV" "$PIPELINE_ARTIFACT_DIR"
+      - name: Rollback automatique si échec
+        if: failure()
+        run: ./ci/rollback.sh "$PIPELINE_CI_ENV" "${{ vars.PIPELINE_PREVIOUS_VERSION }}"
